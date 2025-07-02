@@ -1,5 +1,5 @@
 import seaborn as sns
-import pandas as pandas
+import pandas as pd
 gasolina = pd.read_csv('gasolina.csv', sep=',')
 with sns.axes_style('whitegrid'):
   grafico = sns.lineplot(x='dia', y='venda', data=gasolina)
